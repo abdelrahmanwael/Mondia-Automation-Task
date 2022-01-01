@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Regression test(failed)">
+    <classes>
+      <class name="tests.addItemToCartTest">
+        <methods>
+          <include name="stopDriver"/>
+          <include name="searchResults"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- tests.addItemToCartTest -->
+      <class name="tests.shoppingCartTest">
+        <methods>
+          <include name="stopDriver"/>
+          <include name="startDriver"/>
+          <include name="loginToWebSite"/>
+        </methods>
+      </class> <!-- tests.shoppingCartTest -->
+    </classes>
+  </test> <!-- Regression test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
